@@ -1,31 +1,8 @@
-Data Overview:
-Data is divided across 6 files:
-1.	Order Table:
-•	order_id: Unique identifier for each order.
-•	user_id: Unique identifier for each user.
-•	eval_set: Indicates which evaluation set this order belongs to (train, test, or prior).
-•	order_number: The sequence number for this order (1 for the first order, 2 for the second, etc.).
-•	order_dow: The day of the week the order was placed (0 for Sunday, 1 for Monday, etc.).
-•	order_hour_of_day: The hour of the day the order was placed.
-•	days_since_prior_order: days since the last order, capped at 30 (with NAs for order_number = 1)
-2.	Products Table:
-•	product_id: Unique identifier for each product.
-•	product_name: Name of the product.
-•	aisle_id: Identifier for the aisle where the product is located (foreign key).
-•	department_id: Identifier for the department where the product belongs (foreign key).
-3.	Order Products Train Table:
-•	order_id: Identifier for the order.
-•	product_id: Identifier for the product.
-•	add_to_cart_order: The order in which the product was added to the cart.
-•	reordered: Indicates if the product was reordered in this order (1 for reordered, 0 otherwise).
-4.	Order Products Prior Table:
-•	order_id: Identifier for the order.
-•	product_id: Identifier for the product.
-•	add_to_cart_order: The order in which the product was added to the cart.
-•	reordered: Indicates if the product was reordered in this order (1 for reordered, 0 otherwise).
-5.	Departments Table:
-•	department_id: Identifier for the department.
-•	department: Name of the department.
-6.	Aisles Table:
-•	aisle_id: Identifier for the aisle.
-•	aisle: Name of the aisle.
+/data
+    ├── order_table.csv
+    ├── products_table.csv
+    ├── order_products_train_table.csv
+    ├── order_products_prior_table.csv
+    ├── departments_table.csv
+    └── aisles_table.csv
+

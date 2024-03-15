@@ -6,3 +6,5 @@
     ├── departments_table.csv
     └── aisles_table.csv
 
+/dataset
+    ├── https://www.kaggle.com/c/instacart-market-basket-analysis/data

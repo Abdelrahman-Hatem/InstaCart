@@ -1,1 +1,88 @@
 https://www.kaggle.com/c/instacart-market-basket-analysis/data
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Overview</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Order Table</h2>
+<table>
+  <tr>
+    <th>order_id</th>
+    <th>user_id</th>
+    <th>eval_set</th>
+    <th>order_number</th>
+    <th>order_dow</th>
+    <th>order_hour_of_day</th>
+    <th>days_since_prior_order</th>
+  </tr>
+  <!-- Add rows here -->
+</table>
+
+<h2>Products Table</h2>
+<table>
+  <tr>
+    <th>product_id</th>
+    <th>product_name</th>
+    <th>aisle_id</th>
+    <th>department_id</th>
+  </tr>
+  <!-- Add rows here -->
+</table>
+
+<h2>Order Products Train Table</h2>
+<table>
+  <tr>
+    <th>order_id</th>
+    <th>product_id</th>
+    <th>add_to_cart_order</th>
+    <th>reordered</th>
+  </tr>
+  <!-- Add rows here -->
+</table>
+
+<h2>Order Products Prior Table</h2>
+<table>
+  <tr>
+    <th>order_id</th>
+    <th>product_id</th>
+    <th>add_to_cart_order</th>
+    <th>reordered</th>
+  </tr>
+  <!-- Add rows here -->
+</table>
+
+<h2>Departments Table</h2>
+<table>
+  <tr>
+    <th>department_id</th>
+    <th>department</th>
+  </tr>
+  <!-- Add rows here -->
+</table>
+
+<h2>Aisles Table</h2>
+<table>
+  <tr>
+    <th>aisle_id</th>
+    <th>aisle</th>
+  </tr>
+  <!-- Add rows
+

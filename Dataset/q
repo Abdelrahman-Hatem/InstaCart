@@ -1,88 +1,149 @@
-https://www.kaggle.com/c/instacart-market-basket-analysis/data
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Overview</title>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Overview</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
 </head>
 <body>
 
-<h2>Order Table</h2>
+<h2>Data Overview</h2>
+
 <table>
   <tr>
-    <th>order_id</th>
-    <th>user_id</th>
-    <th>eval_set</th>
-    <th>order_number</th>
-    <th>order_dow</th>
-    <th>order_hour_of_day</th>
-    <th>days_since_prior_order</th>
+    <th>Table Name</th>
+    <th>Column Name</th>
+    <th>Description</th>
   </tr>
-  <!-- Add rows here -->
+  <tr>
+    <td rowspan="7">Order Table</td>
+    <td>order_id</td>
+    <td>Unique identifier for each order.</td>
+  </tr>
+  <tr>
+    <td>user_id</td>
+    <td>Unique identifier for each user.</td>
+  </tr>
+  <tr>
+    <td>eval_set</td>
+    <td>Indicates which evaluation set this order belongs to (train, test, or prior).</td>
+  </tr>
+  <tr>
+    <td>order_number</td>
+    <td>The sequence number for this order (1 for the first order, 2 for the second, etc.).</td>
+  </tr>
+  <tr>
+    <td>order_dow</td>
+    <td>The day of the week the order was placed (0 for Sunday, 1 for Monday, etc.).</td>
+  </tr>
+  <tr>
+    <td>order_hour_of_day</td>
+    <td>The hour of the day the order was placed.</td>
+  </tr>
+  <tr>
+    <td>days_since_prior_order</td>
+    <td>Days since the last order, capped at 30 (with NAs for order_number = 1).</td>
+  </tr>
+  
+  <tr>
+    <td>Products Table</td>
+    <td>product_id</td>
+    <td>Unique identifier for each product.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>product_name</td>
+    <td>Name of the product.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>aisle_id</td>
+    <td>Identifier for the aisle where the product is located (foreign key).</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>department_id</td>
+    <td>Identifier for the department where the product belongs (foreign key).</td>
+  </tr>
+  
+  <tr>
+    <td>Order Products Train Table</td>
+    <td>order_id</td>
+    <td>Identifier for the order.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>product_id</td>
+    <td>Identifier for the product.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>add_to_cart_order</td>
+    <td>The order in which the product was added to the cart.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>reordered</td>
+    <td>Indicates if the product was reordered in this order (1 for reordered, 0 otherwise).</td>
+  </tr>
+  
+  <tr>
+    <td>Order Products Prior Table</td>
+    <td>order_id</td>
+    <td>Identifier for the order.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>product_id</td>
+    <td>Identifier for the product.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>add_to_cart_order</td>
+    <td>The order in which the product was added to the cart.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>reordered</td>
+    <td>Indicates if the product was reordered in this order (1 for reordered, 0 otherwise).</td>
+  </tr>
+  
+  <tr>
+    <td>Departments Table</td>
+    <td>department_id</td>
+    <td>Identifier for the department.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>department</td>
+    <td>Name of the department.</td>
+  </tr>
+  
+  <tr>
+    <td>Aisles Table</td>
+    <td>aisle_id</td>
+    <td>Identifier for the aisle.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>aisle</td>
+    <td>Name of the aisle.</td>
+  </tr>
 </table>
 
-<h2>Products Table</h2>
-<table>
-  <tr>
-    <th>product_id</th>
-    <th>product_name</th>
-    <th>aisle_id</th>
-    <th>department_id</th>
-  </tr>
-  <!-- Add rows here -->
-</table>
-
-<h2>Order Products Train Table</h2>
-<table>
-  <tr>
-    <th>order_id</th>
-    <th>product_id</th>
-    <th>add_to_cart_order</th>
-    <th>reordered</th>
-  </tr>
-  <!-- Add rows here -->
-</table>
-
-<h2>Order Products Prior Table</h2>
-<table>
-  <tr>
-    <th>order_id</th>
-    <th>product_id</th>
-    <th>add_to_cart_order</th>
-    <th>reordered</th>
-  </tr>
-  <!-- Add rows here -->
-</table>
-
-<h2>Departments Table</h2>
-<table>
-  <tr>
-    <th>department_id</th>
-    <th>department</th>
-  </tr>
-  <!-- Add rows here -->
-</table>
-
-<h2>Aisles Table</h2>
-<table>
-  <tr>
-    <th>aisle_id</th>
-    <th>aisle</th>
-  </tr>
-  <!-- Add rows
-
+</body>
+</html>

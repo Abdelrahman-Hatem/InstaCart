@@ -49,6 +49,8 @@ Instacart is an American technology company that operates as a same-day grocery 
    - `aisle_id`: Identifier for the aisle.
    - `aisle`: Name of the aisle.
 
+## Project Organization
+```
 ./
 ├── EDA
 │   └── eda-on-instacart-data.ipynb          
@@ -62,7 +64,7 @@ Instacart is an American technology company that operates as a same-day grocery 
 ├── Presentation
 │   └── DS - Presentation.pdf 
 └── images
-
+```
 References:
 
 Instacart: https://www.instacart.com/

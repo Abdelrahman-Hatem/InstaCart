@@ -1,4 +1,4 @@
-/data
+/[Data](https://www.kaggle.com/c/instacart-market-basket-analysis/data)
     ├── order_table.csv
     ├── products_table.csv
     ├── order_products_train_table.csv
@@ -6,5 +6,3 @@
     ├── departments_table.csv
     └── aisles_table.csv
 
-/dataset
-    ├── https://www.kaggle.com/c/instacart-market-basket-analysis/data

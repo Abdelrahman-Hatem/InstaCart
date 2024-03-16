@@ -49,16 +49,19 @@ Instacart is an American technology company that operates as a same-day grocery 
    - `aisle_id`: Identifier for the aisle.
    - `aisle`: Name of the aisle.
 
-## Usage
-
-- This repository contains data and scripts for conducting market basket analysis on Instacart data.
-- You can use the provided data to explore customer purchasing behavior and build predictive models.
-- Feel free to modify and extend the analysis based on your requirements.
-
-## Acknowledgments
-
-- This project utilizes data from Instacart, which provides valuable insights into consumer behavior.
-- Special thanks to Statista for providing relevant statistics on online shopping trends.
+./
+├── EDA
+│   └── eda-on-instacart-data.ipynb          
+├── Model                                            
+│   └── predictive-analysis-model.ipynb 
+├── Business Insights 
+│   └── Business Questions-Solution.pdf                                              
+├── Example of Deployment
+│   ├── Instacart Power Bi dashboard.mp4
+│   └── Instacart Power Bi dashboard.gif
+├── Presentation
+│   └── DS - Presentation.pdf 
+└── images
 
 References:
 

@@ -52,7 +52,9 @@ Instacart is an American technology company that operates as a same-day grocery 
 ## Project Organization
 ```
 ./
-├── EDA
+├── Dataset
+│   └── https://www.kaggle.com/c/instacart-market-basket-analysis/data
+├── EDA 
 │   └── eda-on-instacart-data.ipynb          
 ├── Model                                            
 │   └── predictive-analysis-model.ipynb 
